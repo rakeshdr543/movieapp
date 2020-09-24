@@ -32,7 +32,7 @@ function Movie({data,active,type}) {
         (data.Title ? (
             <div className='card'>
         <div className='card-header'>
-        <Link to={`/movie/${data.imdbID}`} style={navStyle}>
+        <Link to={`/movieapp/movie/${data.imdbID}`} style={navStyle}>
         <h3 style={{fontWeight:'bolder'}}>{data.Title}</h3>
         </Link>
 
