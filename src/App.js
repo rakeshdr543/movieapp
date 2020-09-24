@@ -17,8 +17,8 @@ function App() {
       <Provider store={store}>
       <Navbar/>
       <Route path='/movieapp/' exact component={HomeScreen}/>
-      <Route path='/favourite' component={Favourites}/>
-      <Route path='/movie/:id' component={MovieDetailScreen}/>
+      <Route path='/movieapp/favourite' component={Favourites}/>
+      <Route path='/movieapp/movie/:id' component={MovieDetailScreen}/>
       </Provider>
 
       </BrowserRouter>

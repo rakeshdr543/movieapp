@@ -15,7 +15,7 @@ function Navbar() {
         </Link>
             
             <ul className='ul-items'>
-            <Link to='/favourite' style={navStyle}>
+            <Link to='/movieapp/favourite' style={navStyle}>
             <li className='link-style'>
                     Favourites
                 </li>
