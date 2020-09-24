@@ -1,38 +1,154 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background-color: rgb(244,244,244);
+  color:#333
+}
+p{
+  font-size: 1.4rem;
+}
+/* HomeScreen */
+.container{
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+  position: relative;
+
+}
+.title{
+  font-size: 4.4rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Navbar */
+
+nav{
+  display: flex;
+  min-height: 10vh;
+  background-color: darkgray;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: white;
+  align-items: center;
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.link-style:hover{
+  color:#ffc107;
+  
+}
+
+.ul-items{
+  display: flex;
+  justify-content: space-between;
+  widows: 30%;
+  list-style: none;
+  align-items: center;
+  margin-left: 2rem;
+  display: relative;
+  
+}
+
+.nav-ul-items{
+  display: flex;
+  justify-content: center;
+  widows: 30%;
+  list-style: none;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+  .filter {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem auto;
+    max-width: 45rem;
+    justify-content: space-between;
+    align-items: center;
   }
-}
+  .filter input,
+  .filter button,
+  .filter select {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem #c0c0c0 solid;
+    font-size: 1.6rem;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* HomeScreen */
+.dropdown-content{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+/*   Movie  */
+.center{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height:50%;
+
+  
+}
+.card{
+  width:30%;
+  display: flexbox;
+  border:1.8px blue solid;
+  background-color: white;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+ 
+  
 }
 
-.App-link {
-  color: #61dafb;
+.card-header{
+  height:25%;
+  background-color: #4285F4;
+  color:white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.card-container{
+  padding: 2px 16px;
+  margin-bottom: 6rem;
+  
+}
+/*favourite movies*/
+.container-fav{
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+  position: relative;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+/* Movie Details */
+.container-detail{
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 90px;
+  position: relative;
+  display:flex;
+  justify-self: center;
+  align-items: center;
+  font-style: italic;
+  font-weight: bold;
+
 }
