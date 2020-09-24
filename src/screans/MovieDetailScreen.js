@@ -12,7 +12,7 @@ const MovieDetailScreen=(math)=> {
         }
     }, [])
     const fetchItems=async ()=>{
-        const items=await axios.get(`http://www.omdbapi.com/?apikey=b1b1c505&i=`+math.match.params.id)
+        const items=await axios.get(`https://www.omdbapi.com/?apikey=b1b1c505&i=`+math.match.params.id)
         const {data}=items
         setMovie(data)
     }

@@ -3,7 +3,7 @@ import Cookie from 'js-cookie';
 import { ADD_TO_FAVOURITE, REMOVE_FROM_FAVOURITE } from './FavConstants';
 
 const addToFavourite=(movieId,favourite)=>async (dispatch,getState)=>{
-    const {data}=await axios.get("http://www.omdbapi.com/?apikey=b1b1c505&i="+movieId);
+    const {data}=await axios.get("https://www.omdbapi.com/?apikey=b1b1c505&i="+movieId);
     dispatch({
         type:ADD_TO_FAVOURITE,payload:{
             movie:movieId,

@@ -5,7 +5,7 @@ import Movie from '../components/Movie';
 
 function HomeScreen() {
     const [searchtext,setSearchtext]=useState('')
-    const [url,setUrl]=useState(`http://www.omdbapi.com/?apikey=b1b1c505`)
+    const [url,setUrl]=useState(`https://www.omdbapi.com/?apikey=b1b1c505`)
     const [data,setData]=useState('')
     const [active,setActive]=useState(false)
     const [type,setType]=useState('movie')
@@ -21,7 +21,7 @@ function HomeScreen() {
     }
     const handleSubmit=(e)=>{
         fetchMovies()
-        setUrl(`http://www.omdbapi.com/?apikey=b1b1c505`)
+        setUrl(`https://www.omdbapi.com/?apikey=b1b1c505`)
         setActive(true)
 
     }
