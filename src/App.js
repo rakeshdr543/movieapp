@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
       <Provider store={store}>
       <Navbar/>
-      <Route path='/' exact component={HomeScreen}/>
+      <Route path='/movieapp/' exact component={HomeScreen}/>
       <Route path='/favourite' component={Favourites}/>
       <Route path='/movie/:id' component={MovieDetailScreen}/>
       </Provider>

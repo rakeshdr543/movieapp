@@ -10,7 +10,7 @@ function Navbar() {
     return (
         <div>
         <nav>
-        <Link to='/' style={navStyle}>
+        <Link to='/movieapp/' style={navStyle}>
         <h3 className='link-style'>Home</h3>
         </Link>
             
